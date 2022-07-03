@@ -11,3 +11,7 @@ const canvas = new Canvas(target);
 const render = new Render(canvas);
 
 render.render();
+
+setInterval(() => {
+    render.render();
+}, 200)

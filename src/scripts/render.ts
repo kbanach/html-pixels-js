@@ -27,8 +27,6 @@ const personStanding = [
     )
 );
 
-
-
 export class Render {
     private readonly canvas: Canvas;
 
@@ -38,17 +36,17 @@ export class Render {
         this.canvas = canvas;
     }
 
-    render() {
-        this.canvas.render(this.currentImage);
-
+    nextFrame() {
         if (this.currentImage === personJumpingImg) {
             this.currentImage = personStanding;
         } else {
             this.currentImage = personJumpingImg;
         }
 
-        setTimeout(() => {
-            this.render();
-        }, 200)
+        return this.currentImage;
+    }
+
+    render() {
+        this.canvas.render(this.nextFrame());
     }
 }
