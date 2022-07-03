@@ -1,4 +1,5 @@
 import { Canvas } from "./scripts/canvas";
+import { Render } from "./scripts/render";
 
 const target = document.querySelector('body');
 
@@ -7,3 +8,6 @@ if (!target) {
 }
 
 const canvas = new Canvas(target);
+const render = new Render(canvas);
+
+render.render();
