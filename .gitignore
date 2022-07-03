@@ -89,7 +89,7 @@ dist
 # public
 
 # parcel cache
-.parcel-cache
+# .parcel-cache
 
 # vuepress build output
 .vuepress/dist
