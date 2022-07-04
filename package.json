@@ -1,0 +1,17 @@
+{
+  "name": "html-pixels-js",
+  "version": "0.0.1",
+  "description": "Learn to handle pixels on pseudo-canvas",
+  "main": "index.js",
+  "repository": "git@github.com-prywata:kbanach/html-pixels-js.git",
+  "author": "Krystian Banach <banach.krystian@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.6.2",
+    "parcel": "^2.6.2"
+  }
+}

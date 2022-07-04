@@ -1,0 +1,14 @@
+.mesh {
+
+    .row {
+        display: flex;
+
+        .pixel {
+            width: 10px;
+            height: 10px;
+            outline: 1px gray solid;
+            margin: 0 0 1px 1px;
+            background: white;
+        }
+    }
+}
